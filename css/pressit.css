@@ -1,0 +1,171 @@
+/* line 1, ../sass/pressit.scss */
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 900px;
+  background: #3D68AA;
+}
+
+/* line 9, ../sass/pressit.scss */
+.pressit {
+  margin: 100px 0 0 50%;
+  padding: 0;
+  position: relative;
+  left: -100px;
+  width: 200px;
+  height: 75px;
+  background: #5C91E4;
+  border: none;
+  color: #fff;
+  font-size: 1.5em;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.27);
+  -webkit-perspective: 200;
+  -webkit-transform: rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  transition: .5s;
+  text-align: center;
+}
+
+@-webkit-keyframes press-left {
+  /* line 30, ../sass/pressit.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 35, ../sass/pressit.scss */
+  50% {
+    -webkit-transform: rotateY(-15deg);
+    transform: rotateY(-15deg);
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.27);
+  }
+
+  /* line 41, ../sass/pressit.scss */
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.17);
+  }
+}
+
+@-webkit-keyframes press-right {
+  /* line 49, ../sass/pressit.scss */
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  /* line 54, ../sass/pressit.scss */
+  50% {
+    -webkit-transform: rotateY(15deg);
+    transform: rotateY(15deg);
+    box-shadow: -3px 2px 5px rgba(0, 0, 0, 0.27);
+  }
+
+  /* line 60, ../sass/pressit.scss */
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.17);
+  }
+}
+
+@-webkit-keyframes press-top {
+  /* line 68, ../sass/pressit.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  /* line 73, ../sass/pressit.scss */
+  50% {
+    -webkit-transform: rotateX(15deg);
+    transform: rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.17);
+  }
+
+  /* line 79, ../sass/pressit.scss */
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.27);
+  }
+}
+
+@-webkit-keyframes press-top {
+  /* line 87, ../sass/pressit.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  /* line 92, ../sass/pressit.scss */
+  50% {
+    -webkit-transform: rotateX(15deg);
+    transform: rotateX(15deg);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.27);
+  }
+
+  /* line 98, ../sass/pressit.scss */
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.17);
+  }
+}
+
+@-webkit-keyframes press-bottom {
+  /* line 106, ../sass/pressit.scss */
+  0% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  /* line 111, ../sass/pressit.scss */
+  50% {
+    -webkit-transform: rotateX(-15deg);
+    transform: rotateX(-15deg);
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.17);
+  }
+
+  /* line 117, ../sass/pressit.scss */
+  100% {
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.17);
+  }
+}
+
+/* line 124, ../sass/pressit.scss */
+.press-top {
+  -webkit-animation-name: press-top;
+  animation-name: press-top;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: .3s;
+}
+
+/* line 131, ../sass/pressit.scss */
+.press-bottom {
+  -webkit-animation-name: press-bottom;
+  animation-name: press-bottom;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: .3s;
+}
+
+/* line 138, ../sass/pressit.scss */
+.press-left {
+  -webkit-animation-name: press-left;
+  animation-name: press-left;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: .3s;
+}
+
+/* line 145, ../sass/pressit.scss */
+.press-right {
+  -webkit-animation-name: press-right;
+  animation-name: press-right;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: .3s;
+}
