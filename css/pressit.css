@@ -94,43 +94,21 @@
   }
 }
 
-@-webkit-keyframes press-top {
-  /* line 87, ../sass/pressit.scss */
-  0% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-  }
-
-  /* line 92, ../sass/pressit.scss */
-  50% {
-    -webkit-transform: rotateX(15deg);
-    transform: rotateX(15deg);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.27);
-  }
-
-  /* line 98, ../sass/pressit.scss */
-  100% {
-    -webkit-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.17);
-  }
-}
-
 @-webkit-keyframes press-bottom {
-  /* line 106, ../sass/pressit.scss */
+  /* line 88, ../sass/pressit.scss */
   0% {
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
   }
 
-  /* line 111, ../sass/pressit.scss */
+  /* line 93, ../sass/pressit.scss */
   50% {
     -webkit-transform: rotateX(-15deg);
     transform: rotateX(-15deg);
-    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.17);
   }
 
-  /* line 117, ../sass/pressit.scss */
+  /* line 99, ../sass/pressit.scss */
   100% {
     -webkit-transform: rotateX(0deg);
     transform: rotateX(0deg);
@@ -138,7 +116,7 @@
   }
 }
 
-/* line 124, ../sass/pressit.scss */
+/* line 106, ../sass/pressit.scss */
 .press-top {
   -webkit-animation-name: press-top;
   animation-name: press-top;
@@ -146,7 +124,7 @@
   -webkit-animation-duration: .3s;
 }
 
-/* line 131, ../sass/pressit.scss */
+/* line 113, ../sass/pressit.scss */
 .press-bottom {
   -webkit-animation-name: press-bottom;
   animation-name: press-bottom;
@@ -154,7 +132,7 @@
   -webkit-animation-duration: .3s;
 }
 
-/* line 138, ../sass/pressit.scss */
+/* line 120, ../sass/pressit.scss */
 .press-left {
   -webkit-animation-name: press-left;
   animation-name: press-left;
@@ -162,7 +140,7 @@
   -webkit-animation-duration: .3s;
 }
 
-/* line 145, ../sass/pressit.scss */
+/* line 127, ../sass/pressit.scss */
 .press-right {
   -webkit-animation-name: press-right;
   animation-name: press-right;
