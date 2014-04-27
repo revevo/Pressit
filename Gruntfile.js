@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					sassDir: 'sass',
-					cssDir: 'css'
+					cssDir: 'css',
+					environment: 'production'
 				}
 			}
 		},
@@ -29,6 +30,7 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 
 	grunt.registerTask('default', ['watch']);
 }
