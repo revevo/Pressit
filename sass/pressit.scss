@@ -1,13 +1,40 @@
+html, body {
+	width: 100%;
+	height: 100%
+}
 .container {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	min-height: 900px;
+	min-height: 100%;
 	background: #3D68AA;
+	color: #fff;
+
+	h1 {
+		margin: 0 auto;
+		padding: 90px 0px;
+		font-size: 48px;
+		text-align: center;
+	}
+
+	a {
+		text-decoration: none;
+		color: #67A2FF;
+		transition: .3s ease;
+	}
+
+	a:hover {
+		color: #FF6054;
+	}
+
+	.info {
+		text-align: center;
+		margin-top: 60px;
+	}
 }
 
 .pressit {
-	margin: 100px 0 0 50%;
+	margin: 120px 0 0 50%;
 	padding: 0;
 	position: relative;
 	left: -100px;
