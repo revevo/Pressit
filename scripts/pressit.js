@@ -58,12 +58,16 @@
 
 			if (isInside(eventXY, topLeft, topRight, middle)) {
 				$(this).addClass('press-top');
+				$(this).html('Top');
 			} else if (isInside(eventXY, bottomRight, bottomLeft, middle)) {
 				$(this).addClass('press-bottom')
+				$(this).html('Bottom');
 			} else if (isInside(eventXY, topLeft, bottomLeft, middle)) {
 				$(this).addClass('press-left');
+				$(this).html('Left');
 			} else if (isInside(eventXY, topRight, bottomRight, middle)) {
 				$(this).addClass('press-right');
+				$(this).html('Right');
 			}
 
 			window.setTimeout(function(element) {
